@@ -66,9 +66,10 @@ const Products = () => {
   //applyFilter Handler
   const applyFilterHandler = (e) => {
     e.preventDefault();
-    setFetchQuery(
-      `https://guitarinventoryapi.herokuapp.com/api/v1/products?sortedBy=${sortFilter}&category=${categoryFilter}&brand=${brandFilter}`
-    );
+    setFetchQuery((prev) => {
+      return `https://guitarinventoryapi.herokuapp.com/api/v1/products?sortedBy=${sortFilter}&category=${categoryFilter}&brand=${brandFilter}`;
+    });
+
     fetchProducts();
   };
   //clearFilters handler
@@ -77,7 +78,9 @@ const Products = () => {
     setSortFilter("");
     setCategoryFilter("");
     setBrandFilter("");
-    setFetchQuery(`https://guitarinventoryapi.herokuapp.com/api/v1/products`);
+    setFetchQuery((prev) => {
+      return `https://guitarinventoryapi.herokuapp.com/api/v1/products?sortedBy=${sortFilter}&category=${categoryFilter}&brand=${brandFilter}`;
+    });
     fetchProducts();
   };
 
@@ -89,9 +92,11 @@ const Products = () => {
       );
       console.log(response.data.data);
       setBrandOptions(
-        [{label:'None',value:''}].concat(response.data.data.map((item) => {
-          return { label: item, value: item };
-        }))
+        [{ label: "None", value: "" }].concat(
+          response.data.data.map((item) => {
+            return { label: item, value: item };
+          })
+        )
       );
     } catch (error) {}
   };
