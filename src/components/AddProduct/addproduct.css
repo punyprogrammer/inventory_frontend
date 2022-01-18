@@ -1,0 +1,66 @@
+.addProductContainer {
+  margin: 0 auto;
+  width: 84vw;
+  min-height: calc(100vh - 70px);
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.addProductHeading {
+  text-align: center;
+  padding: 10px;
+}
+.formInputLabel {
+  margin-right: 20px;
+}
+.formInput {
+  margin-top: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.formInputField {
+  width: 100%;
+  outline: none;
+  padding: 4px;
+}
+.categorySelect {
+  width: 60%;
+}
+.submitButton {
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(11, 163, 11);
+  cursor: pointer;
+}
+.submitButton:hover {
+  background-color: rgb(36, 118, 36);
+}
+.successContainer {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  margin-top: 20px;
+}
+.successText {
+  font-size: 22px;
+  color: green;
+}
+.errorContainer {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(220, 65, 65);
+
+  margin-top: 20px;
+}

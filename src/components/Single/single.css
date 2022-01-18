@@ -1,0 +1,116 @@
+.singleWrapper {
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.imageContainer {
+  flex: 30%;
+}
+.singleImage {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+.infoContainer {
+  padding: 20px;
+  flex: 40%;
+}
+.singleInfo {
+  margin-top: 20px;
+}
+.editName {
+  width: 70%;
+}
+.infoLabel {
+  margin-right: 20px;
+}
+.singleContainer {
+  display: flex;
+}
+.modifyContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  align-items: center;
+}
+.editButton {
+  margin-top: 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(10, 187, 10);
+  cursor: pointer;
+}
+.editButton:hover {
+  background-color: green;
+}
+.deleteButton {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 60%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(223, 40, 40);
+  cursor: pointer;
+}
+.deleteButton:hover {
+  background-color: rgb(230, 17, 17);
+}
+.modifyButton {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 60%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(69, 166, 204);
+  cursor: pointer;
+}
+.modifyButton:hover {
+  background-color: rgb(37, 128, 163);
+}
+.deleteContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deleteYesButton,
+.deleteNoButton {
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 5px 2px;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+.deleteYesButton {
+  background-color: rgb(191, 37, 37);
+}
+.deleteNoButton {
+  background-color: rgb(53, 163, 53);
+}
+.deleteYesButton:hover {
+  background-color: red;
+}
+.deleteNoButton {
+  background-color: green;
+}
+.statusText {
+  margin-top: 20px;
+}

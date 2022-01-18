@@ -1,0 +1,16 @@
+.headerContainer {
+  height: 70px;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerLink {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
